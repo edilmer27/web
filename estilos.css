@@ -78,9 +78,10 @@ tbody {
   }
 
   form {
+    width: 500px;
     margin: 10px;
-    padding: 30px;
-    border: solid 10px;
+    padding: 20px;
+    border: solid 3px;
    
   }
 
@@ -89,8 +90,18 @@ tbody {
   }
 
   input {
-    border-radius: 2px;
+    display: flex;
+    margin: 10px 0px 10px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 0.5px;
     box-sizing: border-box;
   }
-
+ 
+  button {
+    color: #e4f0f5;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(78, 161, 78);
+  }
   
