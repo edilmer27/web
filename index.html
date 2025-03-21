@@ -7,14 +7,15 @@
     <title>Mi página web</title>
 </head>
 <body>
-    <header>
+    <header >
         <h1>Mi primera Pagina Web</h1>
         <p>Esta es una página la cual está hecha con 
             <b>HTML</b> donde se demuestra mis primeros 
             pasos como futuro desarrollador.</p>
     </header>
     <hr>
-    <section>    
+    <section> 
+        <div id="about-me">   
         <h2>Descripción sobre mi</h2>
         <p>Mi nombre es <b>Edilmer José Martínez Sarmiento</b> soy de Fonseca la Guajira 
             tengo 36 años, soy técnico en mantenimiento de equipos de cómputo y 
@@ -26,7 +27,7 @@
              en este curso para adquirir más conocimiento.
 
         </p>
-        
+    </div>
     </section>
     <h2>Mi fotografia</h2>
         <section>
@@ -35,13 +36,15 @@
         
         
         <section>
+            <div id="links">
             <h2>Mi redes sociales</h2>
         <a href="www.facebook.com"><img src="facebook.png" alt="facebook" width="40px" height="60px"></a>
         <a href="www.instagram.com"><img src="instagram.png" alt="instagram" width="50px" height="60px"></a>
         <a href="www.whatsapp.com"><img src="whatsapp.png" alt="whatsapp" width="50px" height="60px"></a>
+    </div>
     </section>
 
-    <section>
+    <section >
         <h2>Pasatiempo</h2>
         <ul>
             <li>Aprender desarrollo web</li>
@@ -141,15 +144,16 @@
     <section>
         <h2>Contacto</h2>
         <form action="#">
-            <label for="">Nombre</label>
-            <input type="text" placeholder="Nombre y apellido">
-            <label for="">Descripción</label>
-            <input type="mensaje" placeholder="Describir porque desea contactarme">
-            <label for="">Email</label>
-            <input type="email" placeholder="escribir email">
-            <button type="submit">Enviar</button>
+            <label>Nombre</label>
+            <input  required id="nombre" type="text" placeholder="Nombre y apellido">
+            <label>Descripción</label>
+            <input required id="descripcion" type="mensaje" placeholder="Describir porque desea contactarme">
+            <label>Email</label>
+            <input  required id="correo" type="email" placeholder="escribir email">
+            <button  id="form-button" type="submit">Enviar</button>
         </form>  
         <br>
-    </section>      
+    </section>   
+    <script src="./main.js"></script>   
 </body>
 </html>
